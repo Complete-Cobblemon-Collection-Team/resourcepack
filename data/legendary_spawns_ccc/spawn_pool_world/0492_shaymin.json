@@ -1,28 +1,22 @@
 {
-  "enabled": true,
-  "neededInstalledMods": [],
-  "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "shaymin-1",
-      "pokemon": "shaymin",
-      "presets": [
-        "natural"
-      ],
-      "type": "pokemon",
-      "context": "grounded",
-      "bucket": "ultra-rare",
-      "level": "50",
-      "weight": 8.0,
-      "condition": {
-        "canSeeSky": true,
-        "biomes": [
-    "#cobblemon:is_floral",
-    "#cobblemon:is_highlands"
-        ],
-        "timeRange": "night",
-        "isRaining": false
-      }
-    }
-  ]
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "shaymin-1",
+            "pokemon": "shaymin",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "ultra-rare",
+            "level": "60-80",
+            "weight": 2.5,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_cherry_blossom"
+                ]
+            }
+        }
+    ]
 }

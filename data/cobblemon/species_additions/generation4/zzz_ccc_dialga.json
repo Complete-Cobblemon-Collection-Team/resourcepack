@@ -1,11 +1,10 @@
 {
   "target": "cobblemon:dialga",
   "implemented": true,
-  "baseScale": 1,
+  "baseScale": -0.7,
   "hitbox": {
     "width": 3.0,
     "height": 6.0,
-    "baseScale": -0.7,
     "fixed": false
   },
   "moves": [

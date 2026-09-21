@@ -3,7 +3,7 @@
     "cry": "q.bedrock_stateful('latios2', 'cry')"
   },
   "portraitScale": 1.25,
-  "portraitTranslation": [-1, 1.2, 0],
+  "portraitTranslation": [-1, 1.4, 0],
   "poses": {
     "battle-standing": {
       "animations": ["q.look('head_ai')", "q.bedrock('latios2', 'battle_idle')"],

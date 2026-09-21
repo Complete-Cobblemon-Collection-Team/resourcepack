@@ -1,10 +1,11 @@
 {
-  "target": "cobblemon:celebi",
-  "implemented": true,
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 0.5,
-    "height": 1.4,
-    "fixed": false
-  }
+    "target": "cobblemon:celebi",
+    "implemented": true,
+    "shoulderMountable": true,
+    "baseScale": 0.5,
+    "hitbox": {
+        "width": 0.5,
+        "height": 1.4,
+        "fixed": false
+    }
 }

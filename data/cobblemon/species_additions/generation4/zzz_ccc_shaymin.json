@@ -1,12 +1,11 @@
 {
-  "target": "cobblemon:shaymin",
-  "implemented": true,
-  "baseScale": 0.4,
-  "hitbox": {
-    "width": 1,
-    "height": 1.2,
-    "fixed": false
-  },
-  "standingEyeHeight": 0.7,
-  "swimmingEyeHeight": 0.7
-}
+    "target": "cobblemon:shaymin",
+    "implemented": true,
+	"baseScale": 0.7,
+    "shoulderMountable": true,
+	"hitbox": {
+        "width": 0.5,
+        "height": 0.5,
+        "fixed": false
+    }
+    }

@@ -1,10 +1,11 @@
 {
   "target": "cobblemon:palkia",
   "implemented": true,
+  "baseScale": -0.7,
   "hitbox": {
     "width": 3.5,
     "height": 6.5,
-    "baseScale": -0.7,
+
     "fixed": false
   },
   "riding": {
