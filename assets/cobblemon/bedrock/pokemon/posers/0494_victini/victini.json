@@ -1,32 +1,82 @@
 {
+  "portraitScale": 0.83,
+  "portraitTranslation": [0.079, 0.971, 0],
+  "profileScale": 0.4,
+  "profileTranslation": [0.02, 1.13, 0],
   "animations": {
-    "cry": "q.bedrock_stateful('victini', 'cry')"
-  },
-  "head": "head",
-  "portraitScale": 1.5,
-  "portraitTranslation": [0.03, 0.15, 0],
+      "cry": "q.bedrock_stateful('victini', 'cry')",
+      "faint": "q.bedrock_primary('victini', 'faint', q.curve('one'))",
+      "recoil": "q.bedrock_stateful('victini', 'recoil')",
+      "physical": "q.bedrock_primary('victini', 'physical')",
+      "special": "q.bedrock_primary('victini', 'special')",
+      "status": "q.bedrock_primary('victini', 'cry', q.curve('symmetrical_wide'))"
+},
   "poses": {
-    "battle-standing": {
-      "animations": ["q.look('head')", "q.bedrock('victini', 'battle_idle')"],
+      "battle-standing": {
+      "poseTypes": ["STAND", "WALK"],
       "isBattle": true,
-      "namedAnimations": {
-        "cry": "q.bedrock_stateful('victini', 'battle_cry')"
-      },
-      "poseTypes": ["STAND", "FLOAT"],
-      "quirks": ["q.bedrock_quirk('victini', 'blink')"]
+      "animations": [
+                "q.look('head')",
+		"q.bedrock('victini', 'battle_idle')"
+      ],
+		"quirks": [
+        "q.bedrock_quirk('victini', 'blink', 8, 30, 1)",
+        "q.bedrock_primary_quirk('victini', 'status', 40, 80, 1)"
+		]
     },
     "standing": {
-      "animations": ["q.look('head')", "q.bedrock('victini', 'ground_idle')"],
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
       "isBattle": false,
-      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE", "FLOAT"],
-      "quirks": ["q.bedrock_quirk('victini', 'blink')"]
+      "animations": [
+      		"q.look('head')",
+		"q.bedrock('victini', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('victini', 'blink')"
+      ]
     },
     "walking": {
-      "animations": ["q.look('head')", "q.bedrock('victini', 'ground_walk')"],
-      "poseTypes": ["WALK", "FLOAT"],
-      "quirks": ["q.bedrock_quirk('victini', 'blink')"]
-    }
-  },
-  "profileScale": 0.6,
-  "profileTranslation": [0, 0.8, 0]
+      "poseTypes": ["WALK"],
+      "animations": [
+      	"q.look('head')",
+        "q.bedrock('victini', 'ground_walk')"
+      ],
+      "quirks": ["q.bedrock_quirk('victini', 'blink')"],
+	  "transformedParts": [
+         {
+           "part": "body",
+           "position": [0, -20, 0],
+           "isVisible": true
+         }
+        ]
+    },
+    "hovering": {
+      "poseTypes": [ "HOVER", "FLOAT" ],
+      "animations": ["q.look('head')", "q.bedrock('victini', 'air_idle')"],
+      "quirks": ["q.bedrock_quirk('victini', 'blink')"],
+	  "transformedParts": [
+         {
+           "part": "body",
+           "position": [0, -20, 0],
+           "isVisible": true
+         }
+        ]
+    },
+    "flying": {
+      "poseTypes": [ "FLY" ],
+      "animations": ["q.look('head')", "q.bedrock('victini', 'air_walk')"],
+      "quirks": ["q.bedrock_quirk('victini', 'blink')"],
+	  "transformedParts": [
+         {
+           "part": "body",
+           "position": [0, -20, 0],
+           "isVisible": true
+         }
+        ]
+    },
+    "sleeping": {
+     "poseTypes": ["SLEEP"],
+     "animations": ["q.bedrock('victini', 'sleep')"]
+   }
+  }
 }

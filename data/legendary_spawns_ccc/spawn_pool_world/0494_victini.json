@@ -4,17 +4,17 @@
   "neededUninstalledMods": [],
   "spawns": [
     {
-      "id": "ccc-victini-1",
-      "pokemon": "victini",
+      "pokemon": "cobblemon:victini",
+      "id": "victini-1",
       "presets": [],
       "type": "pokemon",
       "context": "grounded",
       "bucket": "ultra-rare",
       "level": "15",
-      "weight": 8.0,
+      "weight": 0.1,
       "condition": {
         "structures": [
-          "#cobblemon:ruins/tower"
+          "#cobblemon:savanna"
         ]
       }
     }

@@ -1,9 +1,0 @@
-{
-  "target": "cobblemon:flapple",
-  "implemented": true,
-  "hitbox": {
-    "width": 0.8,
-    "height": 1.5,
-    "fixed": false
-  }
-}
