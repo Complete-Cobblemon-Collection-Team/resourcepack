@@ -1,0 +1,145 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "wormadam-alpha-1",
+             "herdablePokemon": [
+                {
+                    "isFollower": false,
+                    "isLeader": true,
+                    "levelRange": "1-100",
+                    "maxTimes": 1,
+                    "pokemon": "wormadam bagworm_cloak=plant held_item=cobblemon:grass_gem alpha=true",
+                    "weight": 20.0
+                },
+                {
+                    "isFollower": true,
+                    "isLeader": false,
+                    "levelRange": "5-10",
+                    "levelRangeOffset": "-2-4",
+                    "maxTimes": 5,
+                    "pokemon": "burmy bagworm_cloak=plant",
+                    "weight": 70.0
+                }
+            ],
+            "presets": [
+                "natural",
+                "foliage",
+                "treetop"
+            ],
+            "type": "pokemon-herd",
+            "context": "grounded",
+            "bucket": "boss",
+            "level": "20-100",
+            "weight": 22.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_jungle",
+                    "aether:skyroot_forest",
+                    "#cobblemon:is_taiga",
+                    "aether:skyroot_woodland"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
+                ]
+            }
+        },
+        {
+            "id": "wormadam-alpha-2",
+             "herdablePokemon": [
+                {
+                    "isFollower": false,
+                    "isLeader": true,
+                    "levelRange": "1-100",
+                    "maxTimes": 1,
+                    "pokemon": "wormadam bagworm_cloak=sandy held_item=cobblemon:ground_gem alpha=true",
+                    "weight": 20.0
+                },
+                {
+                    "isFollower": true,
+                    "isLeader": false,
+                    "levelRange": "5-10",
+                    "levelRangeOffset": "-2-4",
+                    "maxTimes": 5,
+                    "pokemon": "burmy bagworm_cloak=sandy",
+                    "weight": 70.0
+                }
+            ],
+            "presets": [
+                "natural",
+                "foliage",
+                "treetop"
+            ],
+            "type": "pokemon-herd",
+            "context": "grounded",
+            "bucket": "boss",
+            "levelRange": "20-100",
+            "weight": 22.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                   "#cobblemon:is_desert",
+                    "#cobblemon:is_dripstone"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
+                ]
+            }
+        },
+        {
+            "id": "wormadam-alpha-3",
+             "herdablePokemon": [
+                {
+                    "isFollower": false,
+                    "isLeader": true,
+                    "levelRange": "1-100",
+                    "maxTimes": 1,
+                    "pokemon": "wormadam bagworm_cloak=trash held_item=cobblemon:steel_gem alpha=true",
+                    "weight": 20.0
+                },
+                {
+                    "isFollower": true,
+                    "isLeader": false,
+                    "levelRange": "5-10",
+                    "levelRangeOffset": "-2-4",
+                    "maxTimes": 5,
+                    "pokemon": "burmy bagworm_cloak=trash",
+                    "weight": 70.0
+                }
+            ],
+            "presets": [
+                "natural",
+                "urban"
+            ],
+            "type": "pokemon-herd",
+            "context": "grounded",
+            "bucket": "boss",
+            "levelRange": "20-100",
+            "weight": 22.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                    
+                ],
+                "structures":["minecraft:village"]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
+                ]
+            }
+        }
+    ]
+}

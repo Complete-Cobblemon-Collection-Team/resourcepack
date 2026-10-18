@@ -2,8 +2,20 @@
   "target": "cobblemon:azelf",
   "implemented": true,
   "hitbox": {
-    "width": 0.5,
-    "height": 1.2,
+    "width": 1,
+    "height": 1,
     "fixed": false
-  }
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.17
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.7
+      }
+    }
+  },
+  "baseScale": 0.8
 }

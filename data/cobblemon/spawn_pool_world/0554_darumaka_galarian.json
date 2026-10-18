@@ -4,7 +4,7 @@
   "neededUninstalledMods": [],
   "spawns": [
     {
-      "id": "ccc-darumaka-galarian-1",
+      "id": "darumaka-galarian-1",
       "pokemon": "darumaka galarian",
       "presets": [
         "natural"
@@ -12,13 +12,41 @@
       "type": "pokemon",
       "context": "grounded",
       "bucket": "uncommon",
-      "level": "7-32",
-      "weight": 6.0,
+      "level": "25-45",
+      "weight": 4,
       "condition": {
+        "canSeeSky": true,
         "biomes": [
-          "#cobblemon:is_snowy"
+          "minecraft:frozen_peaks",
+          "minecraft:ice_spikes",
+          "#cobblemon:is_freezing",
+          "#cobblemon:is_cold"
         ]
       }
-    }
+    },
+    {
+            "id": "darumaka-galarian-2",
+            "pokemon": "darumaka galarian",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "7-32",
+            "weight": 5.4,
+            "condition": {
+                "biomes": [
+
+                    "#cobblemon:nether/is_frozen"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:nether/is_quartz",
+                    "#cobblemon:nether/is_toxic"
+                ]
+            }
+        }
   ]
 }

@@ -1,29 +1,61 @@
 {
-  "animations": {
-    "cry": "q.bedrock_stateful('baxcalibur', 'cry', q.curve('symmetrical_wide'))",
-    "physical": "q.bedrock_primary('baxcalibur', 'physical', q.curve('symmetrical_wide'))",
-    "recoil": "q.bedrock_stateful('baxcalibur', 'recoil')",
-    "special": "q.bedrock_primary('baxcalibur', 'special', q.curve('symmetrical_wide'))",
-    "status": "q.bedrock_primary('baxcalibur', 'status', q.curve('symmetrical_wide'))"
-  },
   "portraitScale": 1.7,
-  "portraitTranslation": [-1, 0.8, 0],
+  "portraitTranslation": [-0.72, 3.6, 0],
+  "profileScale": 0.4,
+  "profileTranslation": [0, 1.15, 0],
+  "animations": {
+
+  },
   "poses": {
     "battle-standing": {
-      "animations": ["q.look('head_ai', 1, 1, 20, -20, 25, -25)", "q.bedrock('baxcalibur', 'battle_idle')"],
+      "transformTicks": 10,
+      "poseTypes": ["STAND", "WALK"],
       "isBattle": true,
-      "poseTypes": ["STAND"]
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('baxcalibur', 'battle_idle')"
+      ]
     },
     "standing": {
-      "animations": ["q.look('head_ai', 1, 1, 20, -20, 25, -25)", "q.bedrock('baxcalibur', 'ground_idle')"],
+      "transformTicks": 10,
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
       "isBattle": false,
-      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"]
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('baxcalibur', 'ground_idle')"
+      ]
     },
     "walking": {
-      "animations": ["q.look('head_ai', 1, 1, 20, -20, 25, -25)", "q.bedrock('baxcalibur', 'ground_walk')"],
-      "poseTypes": ["WALK"]
+      "transformTicks": 8,
+      "poseTypes": ["WALK"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('baxcalibur', 'ground_walk')"
+      ]
+    },
+    "hover": {
+      "transformTicks": 5,
+      "poseTypes": [ "FLY", "HOVER", "FLOAT" ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('baxcalibur', 'ground_walk')"
+       ]
+    },
+    "float": {
+      "transformTicks": 5,
+      "poseTypes": ["FLOAT"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('baxcalibur', 'ground_walk')"
+      ]
+    },
+    "swim": {
+      "transformTicks": 8,
+      "poseTypes": ["SWIM"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('baxcalibur', 'ground_walk')"
+      ]
     }
-  },
-  "profileScale": 0.6,
-  "profileTranslation": [-0.15, 0.9, 0]
+  }
 }

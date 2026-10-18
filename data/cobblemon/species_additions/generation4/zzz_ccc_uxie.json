@@ -1,11 +1,21 @@
 {
-  "target": "cobblemon:uxie",
   "implemented": true,
+  "target": "cobblemon:uxie",
   "hitbox": {
-    "width": 0.6,
-    "height": 1.3,
+    "width": 1,
+    "height": 1,
     "fixed": false
   },
-  "standingEyeHeight": 0.7,
-  "swimmingEyeHeight": 0.7
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.17
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.7
+      }
+    }
+  },
+  "baseScale": 0.8
 }

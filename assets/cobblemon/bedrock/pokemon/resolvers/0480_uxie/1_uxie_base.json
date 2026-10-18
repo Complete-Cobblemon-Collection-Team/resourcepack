@@ -1,23 +1,27 @@
 {
+  "species": "cobblemon:uxie",
+  "order": 1,
   "baseScale": 0.75,
   "hitbox": {
-    "fixed": false,
+    "width": 0.5,
     "height": 2,
-    "width": 0.5
+    "fixed": false
   },
-  "order": 1,
-  "species": "cobblemon:uxie",
   "variations": [
     {
       "aspects": [],
-      "layers": [],
-      "model": "cobblemon:uxie.geo",
       "poser": "cobblemon:uxie",
-      "texture": "cobblemon:textures/pokemon/0480_uxie/uxie.png"
-    }, {
+      "model": "cobblemon:uxie.geo",
+      "texture": "cobblemon:textures/pokemon/0480_uxie/uxie.png",
+      "layers": [
+      ] 
+    },
+    {
       "aspects": ["shiny"],
-      "layers": [],
-      "texture": "cobblemon:textures/pokemon/0480_uxie/uxie_shiny.png"
+      "texture": "cobblemon:textures/pokemon/0480_uxie/uxie_shiny.png",
+      "layers": [
+       
+      ]
     }
   ]
 }

@@ -1,36 +1,61 @@
 {
-  "faint": "bedrock(cosmoem, faint)",
-  "head": "head",
-  "portraitScale": 1,
-  "portraitTranslation": [-0.2, 0.85, 0],
+  "portraitScale": 1.28,
+  "portraitTranslation": [0.03, 0.22, 0],
+  "profileScale": 0.57,
+  "profileTranslation": [0.03, 0.89, 0],
+  "animations": {
+    
+  },
   "poses": {
-    "shoulder_left": {
-      "animations": ["look", "bedrock(cosmoem, shoulder_left)"],
-      "poseName": "shoulder_left",
-      "poseTypes": ["SHOULDER_LEFT"],
-      "transformTicks": 10
-    },
-    "shoulder_right": {
-      "animations": ["look", "bedrock(cosmoem, shoulder_right)"],
-      "poseName": "shoulder_right",
-      "poseTypes": ["SHOULDER_RIGHT"],
-      "transformTicks": 10
+    "battle-standing": {
+      "transformTicks": 10,
+      "poseTypes": ["STAND", "WALK"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('cosmoem', 'ground_idle')"
+      ]
     },
     "standing": {
-      "animations": ["look", "bedrock(cosmoem, ground_idle)"],
-      "poseName": "standing",
+      "transformTicks": 10,
       "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
-      "quirks": [],
-      "transformTicks": 10
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('cosmoem', 'ground_idle')"
+      ]
     },
     "walking": {
-      "animations": ["look", "bedrock(cosmoem, ground_walk)"],
-      "poseName": "walking",
+      "transformTicks": 8,
       "poseTypes": ["WALK"],
-      "quirks": [],
-      "transformTicks": 10
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('cosmoem', 'ground_idle')"
+      ]
+    },
+    "hover": {
+      "transformTicks": 5,
+      "poseTypes": [ "FLY", "HOVER", "FLOAT" ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('cosmoem', 'ground_idle')"
+       ]
+    },
+    "float": {
+      "transformTicks": 5,
+      "poseTypes": ["FLOAT"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('cosmoem', 'ground_idle')"
+      ]
+    },
+    "swim": {
+      "transformTicks": 8,
+      "poseTypes": ["SWIM"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('cosmoem', 'ground_idle')"
+      ]
     }
-  },
-  "profileScale": 0.5,
-  "profileTranslation": [0, 1.15, 0]
+  }
 }

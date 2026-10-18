@@ -1,0 +1,37 @@
+{
+  "species": "cobblemon:baxcalibur",
+  "order": 1,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.5,
+    "height": 2,
+    "fixed": false
+  },
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:baxcalibur",
+      "model": "cobblemon:baxcalibur.geo",
+      "texture": "cobblemon:textures/pokemon/0998_baxcalibur/baxcalibur.png",
+      "layers": [
+      ] 
+    },
+    {
+      "aspects": ["shiny"],
+      "texture": "cobblemon:textures/pokemon/0998_baxcalibur/baxcalibur_shiny.png",
+      "layers": [
+       
+      ]
+    },
+    {
+      "aspects": ["alpha_eyes"],
+      "layers": [
+        {
+          "name": "alpha_eyes",
+          "texture": "cobblemon:textures/pokemon/0998_baxcalibur/baxcalibur_alpha.png",
+          "emissive": true
+        }
+      ]
+    }
+  ]
+}

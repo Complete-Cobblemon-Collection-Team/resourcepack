@@ -1,0 +1,28 @@
+{
+  "species": "cobblemon:ogerpon",
+  "order": 2,
+  "variations": [
+    {
+      "aspects": [
+        "wellspring-mask"
+      ],
+      "poser": "cobblemon:ogerpon_wellspring",
+      "model": "cobblemon:ogerpon_wellspring.geo",
+      "texture": "cobblemon:textures/pokemon/1017_ogerpon/ogerpon_wellspring.png",
+      "layers": [
+        {
+          "name": "glow",
+          "texture": "cobblemon:textures/pokemon/1017_ogerpon/ogerpon_emissive_wellspring.png",
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": [
+        "wellspring-mask",
+        "shiny"
+      ],
+      "texture": "cobblemon:textures/pokemon/1017_ogerpon/ogerpon_wellspring.png"
+    }
+  ]
+}

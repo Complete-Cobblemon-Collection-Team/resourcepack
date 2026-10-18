@@ -1,6 +1,6 @@
 {
-  "portraitScale": 0.83,
-  "portraitTranslation": [-1.95,3.75, 0],
+  "portraitScale": 0.88,
+  "portraitTranslation": [-1.8,4.78, 0],
   "profileScale": 0.2,
   "profileTranslation": [0, 1.46, -20],
    "firstPersonCameraOffset": {
@@ -19,7 +19,7 @@
     "special": "q.bedrock_primary('palkia', 'special', q.curve('symmetrical_wide'))",
     "status": "q.bedrock_primary('palkia', 'special', q.curve('symmetrical_wide'))",
     "spacialrend": "q.bedrock_primary('palkia', 'physical', q.curve('symmetrical_wide'))",
-    "recoil":"q.bedrock_primary('palkia', 'recoil', q.curve('symmetrical_wide'))",
+    "recoil":"q.bedrock_stateful('palkia', 'recoil')",
     "faint":"q.bedrock_primary('palkia', 'faint', q.curve('symmetrical_wide'))",
     "cry":"q.bedrock_stateful('palkia', 'cry')"
     
@@ -31,9 +31,9 @@
       "condition": "!q.in_air && !q.is_sprinting",
       "isBattle": true,
       "animations": [
-        "q.look('head', 1, 1, 5, -70, 40, -37)",
+        "q.look('head', 1, 1, 5, -70, 30, -30)",
         "q.look('neck2', 1, 1, 10, -10, 20, -20)",
-        "q.look('neck3', 1, 1, 20, -5, 20, -20)",
+        "q.look('neck3', 1, 1, 20, -5, 5, -5)",
         "q.bedrock('palkia', 'battle_idle')"
       ]
     },
@@ -43,9 +43,9 @@
       "condition": "!q.in_air" ,
       "isBattle": false,
       "animations": [
-        "q.look('head', 1, 1, 5, -70, 40, -37)",
+        "q.look('head', 1, 1, 5, -70, 30, -30)",
         "q.look('neck2', 1, 1, 10, -10, 20, -20)",
-        "q.look('neck3', 1, 1, 12, -5, 20, -20)",
+        "q.look('neck3', 1, 1, 12, -5, 5, -5)",
         "q.bedrock('palkia', 'ground_idle')"
       ],
       "quirks": [
@@ -58,9 +58,9 @@
       "poseTypes": ["WALK"],
       "condition": "!q.in_air && !q.is_sprinting",
       "animations": [
-        "q.look('head', 1, 1, 5, -70, 40, -37)",
+       "q.look('head', 1, 1, 5, -70, 30, -30)",
         "q.look('neck2', 1, 1, 10, -10, 20, -20)",
-        "q.look('neck3', 1, 1, 12, -5, 20, -20)",
+        "q.look('neck3', 1, 1, 12, -5, 5, -5)",
         "q.bedrock('palkia', 'ground_walk')"
       ],
       "quirks": [
@@ -72,9 +72,9 @@
       "condition": "!q.in_air && !q.is_sprinting",
       "poseTypes": [ "HOVER", "FLOAT" ],
       "animations": [
-       "q.look('head', 1, 1, 5, -70, 40, -37)",
+       "q.look('head', 1, 1, 5, -70, 30, -30)",
        "q.look('neck2', 1, 1, 10, -10, 20, -20)",
-       "q.look('neck3', 1, 1, 12, -5, 20, -20)",
+       "q.look('neck3', 1, 1, 12, -5, 5, -5)",
         "q.bedrock('palkia', 'air_idle')"
        ],
       "quirks": [
@@ -85,9 +85,9 @@
         "poseTypes": ["STAND", "WALK"],
         "isBattle": false,
         "condition": "q.in_air && q.is_ridden",
-        "animations": ["q.look('head', 1, 1, 5, -70, 40, -37)",
+        "animations": ["q.look('head', 1, 1, 5, -70, 30, -30)",
                       "q.look('neck2', 1, 1, 10, -10, 20, -20)",
-                      "q.look('neck3', 1, 1, 12, -5, 20, -20)",
+                      "q.look('neck3', 1, 1, 12, -5, 5, -5)",
                       "q.bedrock('palkia', 'ride_jump')"],
         "transformTicks": 2,
         "transformToTicks": 2
@@ -97,9 +97,9 @@
       "condition": "!q.is_sprinting",
       "poseTypes": [ "FLY" ],
       "animations": [
-        "q.look('head', 1, 1, 5, -70, 40, -37)",
+        "q.look('head', 1, 1, 5, -70, 30, -30)",
         "q.look('neck2', 1, 1, 10, -10, 20, -20)",
-        "q.look('neck3', 1, 1, 12, -5, 20, -20)",
+        "q.look('neck3', 1, 1, 12, -5, 5, -5)",
         "q.bedrock('palkia', 'air_fly')"
        ],
       "quirks": [
@@ -111,9 +111,9 @@
       "condition": "!q.is_sprinting",
       "poseTypes": ["FLOAT"],
       "animations": [
-        "q.look('head', 1, 1, 5, -70, 40, -37)",
+        "q.look('head', 1, 1, 5, -70, 30, -30)",
         "q.look('neck2', 1, 1, 10, -10, 20, -20)",
-        "q.look('neck3', 1, 1, 12, -5, 20, -20)",
+        "q.look('neck3', 1, 1, 12, -5, 5, -5)",
         "q.bedrock('palkia', 'ground_walk')"
       ],
       "quirks": [
@@ -125,9 +125,9 @@
         "isBattle": false,
         "condition": "!q.in_air && q.is_sprinting",
         "animations": [
-         "q.look('head', 1, 1, 5, -70, 40, -37)",
+        "q.look('head', 1, 1, 5, -70, 30, -30)",
          "q.look('neck2', 1, 1, 10, -10, 20, -20)",
-         "q.look('neck3', 1, 1, 12, -5, 20, -20)",
+         "q.look('neck3', 1, 1, 12, -5, 5, -5)",
           "q.bedrock('palkia', 'ground_run')",
         {
           "condition": "q.is_ridden",
@@ -144,9 +144,9 @@
       "poseTypes": ["SWIM"],
       "condition": "!q.is_sprinting",
       "animations": [
-        "q.look('head', 1, 1, 5, -70, 40, -37)",
+        "q.look('head', 1, 1, 5, -70, 30, -30)",
         "q.look('neck2', 1, 1, 10, -10, 20, -20)",
-        "q.look('neck3', 1, 1, 12, -5, 20, -20)",
+        "q.look('neck3', 1, 1, 12, -5, 5, -5)",
         "q.bedrock('palkia', 'ground_walk')"
       ],
       "quirks": [

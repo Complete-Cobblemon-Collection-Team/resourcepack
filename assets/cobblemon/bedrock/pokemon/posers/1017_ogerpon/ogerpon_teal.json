@@ -1,54 +1,60 @@
 {
-  "faint": "bedrock(ogerpon_teal, sleep)",
   "head": "head",
   "portraitScale": 2.7,
-  "portraitTranslation": [-0.5, 1.0, 0],
+  "portraitTranslation": [ -0.5, 1.0, 0 ],
+  "profileScale": 0.7,
+  "profileTranslation": [ 0, 0.8, 0 ],
+  "faint": "bedrock(ogerpon_teal, sleep)",
   "poses": {
     "battle-idle": {
-      "animations": ["bedrock(ogerpon_teal, battle_idle)"],
-      "isBattle": true,
       "poseName": "battle-idle",
+      "transformTicks": 10,
       "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": ["bedrock(ogerpon_teal, battle_idle)"],
       "quirks": [
         {
-          "animations": ["bedrock(ogerpon_teal, blink)"],
-          "name": "blink"
+          "name": "blink",
+          "animations": ["bedrock(ogerpon_teal, blink)"]
         }
-      ],
-      "transformTicks": 10
-    },
-    "sleeping": {
-      "animations": ["bedrock(ogerpon_teal, sleep)"],
-      "poseName": "sleeping",
-      "poseTypes": ["SLEEP"],
-      "transformTicks": 10
+      ]
     },
     "standing": {
-      "animations": ["bedrock(ogerpon_teal, ground_idle)"],
-      "isBattle": false,
       "poseName": "standing",
+      "transformTicks": 10,
       "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
-      "quirks": [
-        {
-          "animations": ["bedrock(ogerpon_teal, blink)"],
-          "name": "blink"
-        }
-      ],
-      "transformTicks": 10
+      "isBattle": false,
+      "animations": [
+        "bedrock(ogerpon_teal, ground_idle)"],
+        "quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(ogerpon_teal, blink)"]
+          }
+        ]
     },
     "walking": {
-      "animations": ["bedrock(ogerpon_teal, ground_run)"],
       "poseName": "walking",
-      "poseTypes": ["WALK"],
+      "transformTicks": 10,
+      "poseTypes": [ "WALK" ],
+      "animations": [ 
+        "bedrock(ogerpon_teal, ground_run)" ],
       "quirks": [
         {
-          "animations": ["bedrock(ogerpon_teal, blink)"],
-          "name": "blink"
+          "name": "blink",
+          "animations": ["bedrock(ogerpon_teal, blink)"]
         }
-      ],
-      "transformTicks": 10
-    }
-  },
-  "profileScale": 0.7,
-  "profileTranslation": [0, 0.8, 0]
+      ]
+    },
+      "sleeping": {
+        "poseName": "sleeping",
+        "transformTicks": 10,
+        "poseTypes": [
+          "SLEEP"
+        ],
+        "animations": [
+          "bedrock(ogerpon_teal, sleep)"
+        ]
+     }
+  }
 }

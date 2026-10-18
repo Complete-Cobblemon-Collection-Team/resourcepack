@@ -4,7 +4,9 @@
   "profileScale": 0.3,
   "profileTranslation": [-0.08, 1.48, 0],
   "animations": {
-    
+    "recoil":"q.bedrock_stateful('necrozma', 'recoil')",
+    "physical": "q.bedrock_primary('necrozma', 'physical', q.curve('symmetrical_wide'))",
+    "special": "q.bedrock_primary('necrozma', 'special', q.curve('symmetrical_wide'))"
   },
   "poses": {
     "battle-standing": {
@@ -13,7 +15,7 @@
       "condition": "!q.in_air && !q.is_sprinting",
       "isBattle": true,
       "animations": [
-        "q.bedrock('necrozma', 'ground_idle')"
+        "q.bedrock('necrozma', 'battle_idle')"
       ]
     },
     "standing": {
@@ -67,7 +69,6 @@
     },
     "run": {
         "poseTypes": ["STAND","WALK"],
-        "isBattle": false,
         "condition": "!q.in_air && q.is_sprinting && !q.is_ridden",
         "animations": [
           "q.bedrock('necrozma', 'air_fly')"
@@ -77,7 +78,6 @@
       },
       "ride-run": {
         "poseTypes": ["STAND","WALK"],
-        "isBattle": false,
         "condition": "!q.in_air && q.is_sprinting && q.is_ridden",
         "animations": [
           "q.bedrock('necrozma', 'ride_air_fly')"
@@ -86,7 +86,6 @@
       },
       "ride-walking": {
         "poseTypes": ["WALK"],
-        "isBattle": false,
         "condition": "!q.in_air && !q.is_sprinting && q.is_ridden",
         "animations": [
           "q.bedrock('necrozma', 'ride_ground_walk')",
@@ -101,7 +100,6 @@
       "transformTicks": 10,
       "condition": "!q.in_air && q.is_ridden" ,
       "poseTypes": ["STAND"],
-      "isBattle": false,
       "animations": [
         "q.bedrock('necrozma', 'ride_ground_idle')"
       ]
@@ -110,7 +108,6 @@
       "transformTicks": 10,
       "condition": "q.in_air && q.is_ridden" ,
       "poseTypes": ["HOVER", "NONE"],
-      "isBattle": false,
       "animations": [
         "q.bedrock('necrozma', 'ride_ground_idle')"
       ]
@@ -119,7 +116,6 @@
       "transformTicks": 10,
       "condition": "q.in_air && q.is_ridden" ,
       "poseTypes": ["HOVER", "NONE"],
-      "isBattle": false,
       "animations": [
         "q.bedrock('necrozma', 'ride_ground_idle')"
       ]

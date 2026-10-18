@@ -1,41 +1,69 @@
 {
-  "animations": {},
   "portraitScale": 0.8,
-  "portraitTranslation": [-1.09, 6.31, 0],
+  "portraitTranslation": [-1.09,6.31, 0],
+  "profileScale": 0.15,
+  "profileTranslation": [0, 1.6, -20],
+  "animations": {
+    
+  },
   "poses": {
     "battle-standing": {
-      "animations": ["q.look('head')", "q.bedrock('dialga_origin', 'battle_idle')"],
-      "isBattle": true,
+      "transformTicks": 10,
       "poseTypes": ["STAND", "WALK"],
-      "transformTicks": 10
-    },
-    "float": {
-      "animations": ["q.look('head')", "q.bedrock('dialga_origin', 'ground_walk')"],
-      "poseTypes": ["FLOAT"],
-      "transformTicks": 5
-    },
-    "hover": {
-      "animations": ["q.look('head')", "q.bedrock('dialga_origin', 'ground_idle')"],
-      "poseTypes": ["FLY", "HOVER", "FLOAT"],
-      "transformTicks": 5
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('dialga_origin', 'battle_idle')"
+      ]
     },
     "standing": {
-      "animations": ["q.look('head')", "q.bedrock('dialga_origin', 'ground_idle')"],
-      "isBattle": false,
+      "transformTicks": 10,
       "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
-      "transformTicks": 10
-    },
-    "swim": {
-      "animations": ["q.look('head')", "q.bedrock('dialga_origin', 'ground_walk')"],
-      "poseTypes": ["SWIM"],
-      "transformTicks": 8
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('dialga_origin', 'ground_idle')"
+      ]
     },
     "walking": {
-      "animations": ["q.look('head')", "q.bedrock('dialga_origin', 'ground_walk')"],
+      "transformTicks": 8,
       "poseTypes": ["WALK"],
-      "transformTicks": 8
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('dialga_origin', 'ground_walk')"
+      ]
+    },
+    "hover": {
+      "transformTicks": 5,
+      "poseTypes": [ "HOVER", "FLOAT" ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('dialga_origin', 'ground_idle')"
+       ]
+    },
+    "float": {
+      "transformTicks": 5,
+      "poseTypes": ["FLOAT"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('dialga_origin', 'ground_walk')"
+      ]
+    },
+    "swim": {
+      "transformTicks": 8,
+      "poseTypes": ["SWIM"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('dialga_origin', 'ground_walk')"
+      ]
+    },
+    "fly": {
+      "transformTicks": 5,
+      "poseTypes": [ "FLY" ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('dialga_origin', 'ground_walk')"
+       ]
     }
-  },
-  "profileScale": 0.15,
-  "profileTranslation": [0, 1.6, -20]
+  }
 }

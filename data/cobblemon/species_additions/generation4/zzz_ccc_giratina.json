@@ -1,9 +1,8 @@
 {
-  "target": "cobblemon:giratina",
   "implemented": true,
-  "baseScale": 1.1,
+  "target": "cobblemon:giratina",
   "hitbox": {
-    "width": 2.5,
+    "width": 4.5,
     "height": 6.5,
     "fixed": false
   },
@@ -45,84 +44,8 @@
     },
     "seats": [
       {
-        "offset": {
-          "x": 0.0,
-          "y": 0.0,
-          "z": 0.0
-        },
-        "poseOffsets": [
-          {
-            "offset": {
-              "x": 0.0047415113,
-              "y": -1.6152971,
-              "z": 0.35461712
-            },
-            "poseTypes": [
-              "STAND"
-            ]
-          },
-          {
-            "offset": {
-              "x": -0.003806442,
-              "y": -1.7203209,
-              "z": 0.12983066
-            },
-            "poseTypes": [
-              "WALK"
-            ]
-          },
-          {
-            "offset": {
-              "x": 0.039005388,
-              "y": -2.4511793,
-              "z": 0.10381147
-            },
-            "poseTypes": [
-              "HOVER"
-            ]
-          },
-          {
-            "offset": {
-              "x": 0.058042027,
-              "y": -2.1422236,
-              "z": -0.52422106
-            },
-            "poseTypes": [
-              "FLY"
-            ]
-          },
-          {
-            "offset": {
-              "x": 0.0,
-              "y": -0.7674751,
-              "z": -0.27694723
-            },
-            "poseTypes": [
-              "FLOAT"
-            ]
-          },
-          {
-            "offset": {
-              "x": -0.003806442,
-              "y": -1.7203209,
-              "z": 0.12983066
-            },
-            "poseTypes": [
-              "SWIM"
-            ]
-          },
-          {
-            "offset": {
-              "x": 0.0047415113,
-              "y": -1.6152971,
-              "z": 0.35461712
-            },
-            "poseTypes": [
-              "GLIDE"
-            ]
+            "locator": "seat_1"
           }
-        ]
-      }
     ],
     "behaviour": {
       "key": "cobblemon:composite",
@@ -159,5 +82,6 @@
         "flySpeedHorizontal": 0.7
       }
     }
-  }
+  },
+  "baseScale": 1.1
 }

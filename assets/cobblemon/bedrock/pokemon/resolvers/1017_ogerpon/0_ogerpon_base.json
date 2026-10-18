@@ -1,37 +1,25 @@
 {
-  "order": 0,
   "species": "cobblemon:ogerpon",
+  "order": 0,
   "variations": [
     {
       "aspects": [],
+      "poser": "cobblemon:ogerpon",
+      "model": "cobblemon:ogerpon.geo",
+      "texture": "cobblemon:textures/pokemon/1017_ogerpon/ogerpon.png",
       "layers": [
         {
-          "emissive": true,
           "name": "glow",
-          "texture": "cobblemon:textures/pokemon/1017_ogerpon/ogerpon_emissive.png"
+          "texture": "cobblemon:textures/pokemon/1017_ogerpon/ogerpon_emissive.png",
+          "emissive": true
         }
+      ]
+    },
+    {
+      "aspects": [
+        "shiny"
       ],
-      "model": "cobblemon:ogerpon_teal.geo",
-      "poser": "cobblemon:ogerpon_teal",
-      "texture": "cobblemon:textures/pokemon/1017_ogerpon/ogerpon.png"
-    }, {
-      "aspects": ["shiny"],
       "texture": "cobblemon:textures/pokemon/1017_ogerpon/ogerpon_shiny.png"
-    }, {
-      "aspects": ["embody-aspect"],
-      "layers": [
-        {
-          "emissive": true,
-          "name": "glow",
-          "texture": "cobblemon:textures/pokemon/1017_ogerpon/ogerpon_tealtera_emissive.png"
-        }
-      ],
-      "model": "cobblemon:ogerpon_tealtera.geo",
-      "poser": "cobblemon:ogerpon_tealtera",
-      "texture": "cobblemon:textures/pokemon/1017_ogerpon/ogerpon_tealtera.png"
-    }, {
-      "aspects": ["embody-aspect", "shiny"],
-      "texture": "cobblemon:textures/pokemon/1017_ogerpon/ogerpon_tealtera_shiny.png"
     }
   ]
 }

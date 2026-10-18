@@ -1,31 +1,55 @@
 {
-  "animations": {
-    "cry": "q.bedrock_stateful('darmanitan_galar_zen', 'cry')",
-    "faint": "q.bedrock_primary('darmanitan_galar_zen', 'sleep', q.curve('one'))"
-  },
   "head": "head",
   "portraitScale": 1.5,
-  "portraitTranslation": [-0.2, -0.4, 0],
+  "portraitTranslation": [
+    -0.2,
+    -0.4,
+    0
+  ],
+  "profileScale": 0.7,
+  "profileTranslation": [
+    0,
+    0.4,
+    0
+  ],
+  "animations": {
+    "faint": "q.bedrock_primary('darmanitan_galar_zen', 'sleep', q.curve('one'))",
+    "cry": "q.bedrock_stateful('darmanitan_galar_zen', 'cry')"
+  },
   "poses": {
-    "battle-standing": {
-      "animations": ["q.look('head_ai')", "q.bedrock('darmanitan_galar_zen', 'battle_idle')"],
-      "isBattle": true,
-      "isTouchingWater": false,
-      "poseTypes": ["STAND"]
+    "standing": {
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": [
+        "STAND",
+        "NONE",
+        "PORTRAIT",
+        "PROFILE"
+      ],
+      "animations": [
+        "bedrock(darmanitan_galar_zen, battle_idle)"
+      ]
     },
     "sleeping": {
-      "animations": ["bedrock(darmanitan_galar_zen, sleep)"],
       "poseName": "sleeping",
-      "poseTypes": ["SLEEP"],
-      "transformTicks": 10
+      "transformTicks": 10,
+      "poseTypes": [
+        "SLEEP"
+      ],
+      "animations": [
+        "bedrock(darmanitan_galar_zen, sleep)"
+      ]
     },
-    "standing": {
-      "animations": ["bedrock(darmanitan_galar_zen, battle_idle)"],
-      "poseName": "standing",
-      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
-      "transformTicks": 10
+    "battle-standing": {
+      "poseTypes": [
+        "STAND"
+      ],
+      "isBattle": true,
+      "isTouchingWater": false,
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('darmanitan_galar_zen', 'battle_idle')"
+      ]
     }
-  },
-  "profileScale": 0.7,
-  "profileTranslation": [0, 0.4, 0]
+  }
 }

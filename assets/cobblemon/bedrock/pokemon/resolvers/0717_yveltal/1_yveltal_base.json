@@ -1,17 +1,43 @@
 {
-  "order": 1,
   "species": "cobblemon:yveltal",
+  "order": 1,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.5,
+    "height": 2,
+    "fixed": false
+  },
   "variations": [
     {
       "aspects": [],
-      "model": "cobblemon:yveltal.geo",
       "poser": "cobblemon:yveltal",
-      "texture": "cobblemon:textures/pokemon/0717_yveltal/yveltal.png"
-    }, {
+      "model": "cobblemon:yveltal.geo",
+      "texture": "cobblemon:textures/pokemon/0717_yveltal/yveltal.png",
+      "layers": [
+         {
+          "name": "emissive",
+          "emissive": false,
+          "texture": "cobblemon:textures/pokemon/0717_yveltal/yveltal_emissive.png",
+              "translucent": false
+              
+        }
+        
+      ] 
+    },
+    {
       "aspects": ["shiny"],
-      "model": "cobblemon:yveltal.geo",
-      "poser": "cobblemon:yveltal",
-      "texture": "cobblemon:textures/pokemon/0717_yveltal/yveltal_shiny.png"
+      "texture": "cobblemon:textures/pokemon/0717_yveltal/yveltal_shiny.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "emissive": false,
+          "texture": "cobblemon:textures/pokemon/0717_yveltal/yveltal_emissive.png",
+              "translucent": false
+              
+        }
+       
+      ]
+      
     }
   ]
 }
