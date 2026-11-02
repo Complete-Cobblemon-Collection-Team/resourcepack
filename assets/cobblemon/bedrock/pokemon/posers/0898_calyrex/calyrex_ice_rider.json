@@ -1,22 +1,31 @@
 {
-  "portraitScale": 1,
-  "portraitTranslation": [-0.4, 2.2, 0],
-  "poses": {
+  "portraitScale": 1.7,
+  "portraitTranslation": [ -1.1, 2.42, 0 ],
+  "profileScale": 0.47,
+  "profileTranslation": [ -0.05, 0.98, 0 ],
+  "poses": { 
     "battle-standing": {
-      "animations": ["q.look('neck')", "q.bedrock('calyrex_ice_rider', 'battle_idle')"],
+      "poseTypes": ["STAND"],
       "isBattle": true,
-      "poseTypes": ["STAND"]
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('calyrex_ice_rider', 'battle_idle')"
+      ]
     },
     "standing": {
-      "animations": ["q.look('neck')", "q.bedrock('calyrex_ice_rider', 'ground_idle')"],
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
       "isBattle": false,
-      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"]
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('calyrex_ice_rider', 'ground_idle')"
+      ]
     },
     "walking": {
-      "animations": ["q.look('neck')", "q.bedrock('calyrex_ice_rider', 'ground_walk')"],
-      "poseTypes": ["WALK"]
+      "poseTypes": ["WALK"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('calyrex_ice_rider', 'ground_walk')"
+      ]
     }
-  },
-  "profileScale": 0.5,
-  "profileTranslation": [0, 1, 0]
+  }
 }

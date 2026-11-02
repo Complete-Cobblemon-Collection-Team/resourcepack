@@ -1,54 +1,45 @@
 {
-  "faint": "bedrock(terapagos, sleep)",
-  "head": "head",
-  "portraitScale": 2.6,
-  "portraitTranslation": [-1.1, -1.55, 0],
-  "poses": {
-    "battle-idle": {
-      "animations": ["bedrock(terapagos, ground_idle)"],
-      "isBattle": true,
-      "poseName": "battle-idle",
+  "portraitScale": 3.34,
+  "portraitTranslation": [ -1.18, -2.5, 0.0],
+  "profileScale": 0.81,
+  "profileTranslation": [0, 0.52, 0.0],
+  "animations": { 
+    "cry": "q.bedrock_stateful('terapagos', 'cry')"
+  },
+  "poses": { 
+    "battle-standing": {
       "poseTypes": ["STAND"],
-      "quirks": [
-        {
-          "animations": ["bedrock(terapagos, blink)"],
-          "name": "blink"
-        }
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('terapagos', 'battle_idle')"
       ],
-      "transformTicks": 10
-    },
-    "sleeping": {
-      "animations": ["bedrock(terapagos, sleep)"],
-      "poseName": "sleeping",
-      "poseTypes": ["SLEEP"],
-      "transformTicks": 10
+      "quirks": [
+        "q.bedrock_quirk('terapagos', 'blink')"
+      ]
     },
     "standing": {
-      "animations": ["q.look('head')", "bedrock(terapagos, ground_idle)"],
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "FLOAT", "PROFILE"],
       "isBattle": false,
-      "poseName": "standing",
-      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
-      "quirks": [
-        {
-          "animations": ["bedrock(terapagos, blink)"],
-          "name": "blink"
-        }
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('terapagos', 'ground_idle')"
       ],
-      "transformTicks": 10
+      "quirks": [
+        "q.bedrock_quirk('terapagos', 'blink')"
+      ]
     },
     "walking": {
-      "animations": ["q.look('head')", "bedrock(terapagos, ground_walk)"],
-      "poseName": "walking",
-      "poseTypes": ["WALK"],
-      "quirks": [
-        {
-          "animations": ["bedrock(terapagos, blink)"],
-          "name": "blink"
-        }
+      "poseTypes": ["WALK", "SWIM"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('terapagos', 'ground_walk')"
       ],
-      "transformTicks": 10
+      "quirks": ["q.bedrock_quirk('terapagos', 'blink')"]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('terapagos', 'sleep')"]
     }
-  },
-  "profileScale": 0.7,
-  "profileTranslation": [0, 0.4, 0]
+  }
 }

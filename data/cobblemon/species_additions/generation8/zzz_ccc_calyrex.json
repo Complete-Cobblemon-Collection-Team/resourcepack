@@ -1,9 +1,11 @@
 {
   "target": "cobblemon:calyrex",
-  "implemented": true,
+    "implemented": true,
+  "baseScale": 1,
   "hitbox": {
-    "width": 0.6,
-    "height": 2,
+    "width": 1,
+    "height": 1,
     "fixed": false
+   },
+   "features": ["ice", "shadow"]
   }
-}

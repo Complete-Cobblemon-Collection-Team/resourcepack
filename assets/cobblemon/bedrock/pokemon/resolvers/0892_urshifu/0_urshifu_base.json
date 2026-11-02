@@ -1,18 +1,34 @@
 {
-  "order": 0,
-  "species": "cobblemon:urshifu",
-  "variations": [
-    {
-      "aspects": [],
-      "layers": [],
-      "model": "cobblemon:urshifu.geo",
-      "poser": "cobblemon:urshifu",
-      "texture": "cobblemon:textures/pokemon/0892_urshifu/urshifu.png"
-    }, {
-      "aspects": ["shiny"],
-      "model": "cobblemon:urshifu.geo",
-      "poser": "cobblemon:urshifu",
-      "texture": "cobblemon:textures/pokemon/0892_urshifu/urshifu_shiny.png"
-    }
-  ]
+	"species": "cobblemon:urshifu",
+	"order": 10,
+	"variations": [
+		{
+			"aspects": ["single_strike-style"],
+			"poser": "cobblemon:urshifu",
+			"model": "cobblemon:urshifu.geo",
+			"texture": "cobblemon:textures/pokemon/urshifu/urshifu.png",
+			"layers": []
+		},
+		{
+			"aspects": [ "single_strike-style","shiny" ],
+			"poser": "cobblemon:urshifu",
+			"model": "cobblemon:urshifu.geo",
+			"texture": "cobblemon:textures/pokemon/urshifu/urshifu_shiny.png"
+		},
+		{
+			"aspects": [ "rapid_strike-style"],
+			"poser": "cobblemon:urshifurs",
+			"model": "cobblemon:urshifurs.geo",
+			"texture": "cobblemon:textures/pokemon/urshifurs/urshifurs.png",
+			"layers": [
+				
+			]
+		},
+		{
+			"aspects": [  "rapid_strike-style","shiny" ],
+			"poser": "cobblemon:urshifurs",
+			"model": "cobblemon:urshifurs.geo",
+			"texture": "cobblemon:textures/pokemon/urshifurs/urshifurs_shiny.png"
+		}
+	]
 }

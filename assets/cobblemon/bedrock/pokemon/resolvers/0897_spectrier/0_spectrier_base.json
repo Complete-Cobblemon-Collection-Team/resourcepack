@@ -1,16 +1,18 @@
 {
-  "order": 0,
   "species": "cobblemon:spectrier",
+  "order": 0,
   "variations": [
     {
       "aspects": [],
-      "layers": [],
-      "model": "cobblemon:spectrier.geo",
       "poser": "cobblemon:spectrier",
-      "texture": "cobblemon:textures/pokemon/0897_spectrier/spectrier.png"
-    }, {
-      "aspects": ["shiny"],
-      "layers": [],
+      "model": "cobblemon:spectrier.geo",
+      "texture": "cobblemon:textures/pokemon/0897_spectrier/spectrier.png",
+      "layers": []
+    },
+    {
+      "aspects": [
+        "shiny"
+      ],
       "texture": "cobblemon:textures/pokemon/0897_spectrier/spectrier_shiny.png"
     }
   ]
